@@ -1,5 +1,6 @@
 plugins {
     id("keel.compose.multiplatform")
+    id("keel.koin")
 }
 
 kotlin {
@@ -10,9 +11,21 @@ kotlin {
             binaryOption("bundleId", "com.keel.app.shell")
         }
     }
-    sourceSets.commonMain.dependencies {
-        implementation(projects.core.designsystem)
-        implementation(libs.androidx.lifecycle.viewmodel.compose)
-        implementation(libs.androidx.lifecycle.runtime.compose)
+    sourceSets {
+        commonMain.dependencies {
+            api(libs.koin.core)
+            implementation(projects.core.common)
+            implementation(projects.core.data)
+            implementation(projects.core.designsystem)
+            implementation(projects.core.navigation)
+            implementation(projects.core.network)
+            implementation(projects.feature.home.api)
+            implementation(projects.feature.home.impl)
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
+            implementation(libs.androidx.lifecycle.runtime.compose)
+        }
+        androidMain.dependencies {
+            api(libs.koin.android)
+        }
     }
 }

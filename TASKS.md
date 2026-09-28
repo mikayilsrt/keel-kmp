@@ -38,7 +38,7 @@ Ajustements par rapport au découpage de base :
 | 12 | `core:data` : repositories partagés (utilisateurs fake, préférences) | core:data | `feat: add core data module with shared repositories` | ✅ |
 | 13 | `core:testing` : fakes, `MainDispatcherRule` équivalent KMP, helpers coroutines | core:testing | `test: add core testing module with fakes and coroutine helpers` | ✅ |
 | 14 | `feature:home` api + impl : liste depuis `core:data`, clic → `ProfileRoute(userId)` (crée aussi `feature:profile:api`, cible de la navigation) | feature:home:api, feature:home:impl, feature:profile:api | `feat: add home feature api and impl modules` | ✅ |
-| 15 | Shell : `initKoin()`, `App()`, `NavHost` alimenté par `FeatureEntry`, `NavControllerNavigator`, safe areas, init Koin iOS/Android | shell, androidApp, iosApp | `feat: wire shell with koin, navhost and safe area handling` | ⬜ |
+| 15 | Shell : `initKoin()`, `App()`, `NavHost` alimenté par `FeatureEntry`, `NavControllerNavigator`, safe areas, init Koin iOS/Android | shell, androidApp, iosApp | `feat: wire shell with koin, navhost and safe area handling` | ✅ |
 | 16 | `feature:profile` impl : id lu via `SavedStateHandle.toRoute`, bouton retour | feature:profile:impl, shell | `feat: add profile feature with type-safe userId argument` | ⬜ |
 | 17 | `feature:settings` api + impl : toggle thème sombre persisté, appliqué par le Shell, BottomBar Home / Settings | feature:settings:api, feature:settings:impl, shell | `feat: add settings feature with persisted dark theme and bottom bar` | ⬜ |
 | 18 | FeatureImplConventionPlugin : échec du build si un impl dépend d'un autre impl | build-logic | `build: fail build when an impl module depends on another impl` | ⬜ |
