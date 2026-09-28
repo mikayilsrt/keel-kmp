@@ -44,7 +44,7 @@ Ajustements par rapport au découpage de base :
 | 18 | FeatureImplConventionPlugin : échec du build si un impl dépend d'un autre impl | build-logic | `build: fail build when an impl module depends on another impl` | ✅ |
 | 19 | Tests des ViewModels en `commonTest` (Turbine + fakes) ; `allTests` couvre déjà iOS + Android host | feature:*:impl, shell | `test: add viewmodel tests in commonTest using fakes` | ✅ |
 | 20 | Test Koin `verify()` des modules en `androidHostTest` | shell | `test: verify koin module graph in android host tests` | ✅ |
-| 21 | Script `rename.sh` (testé sur copie temporaire) | racine | `chore: add rename.sh script to bootstrap new projects` | ⬜ |
+| 21 | Script `rename.sh` (testé sur copie temporaire) | racine | `chore: add rename.sh script to bootstrap new projects` | ✅ |
 | 22 | README : présentation, architecture, règles de dépendances, lancement Android / simulateur / iPhone, ajout de feature, rename.sh | README.md | `docs: write README for Keel architecture and usage` | ⬜ |
 
 ## Vérifications par tâche
