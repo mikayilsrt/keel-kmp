@@ -25,7 +25,7 @@ Ajustements par rapport au découpage de base :
 |---|---|---|---|---|
 | 0 | Import du projet généré + plan | racine | `chore: import generated KMP project and add restructuring plan` | ✅ |
 | 1 | Suppression du code d'exemple (Greeting, Platform), `.gitignore` Android + Xcode + Kotlin/Native, scheme Xcode partagé, bundle id `com.keel.app` | racine, shared, iosApp | `chore: clean generated sample code and harden gitignore` | ✅ |
-| 2 | Version catalog : versions stables vérifiées et compatibles (Kotlin, CMP, AGP, KSP, Koin, Ktor, Room, DataStore…), `minSdk 26` | gradle/libs.versions.toml | `build: set up version catalog with verified stable versions` | ⬜ |
+| 2 | Version catalog : versions stables vérifiées et compatibles (Kotlin, CMP, AGP, KSP, Koin, Ktor, Room, DataStore…), `minSdk 26` | gradle/libs.versions.toml | `build: set up version catalog with verified stable versions` | ✅ |
 | 3 | Included build `build-logic` : KmpLibrary, ComposeMultiplatform, Koin, FeatureApi, FeatureImpl, AndroidApplication ; typesafe project accessors | build-logic, settings, androidApp, shared | `build: add build-logic included build with convention plugins` | ⬜ |
 | 4 | Renommage `shared` → `shell`, framework iOS produit par `shell`, phase Xcode rebranchée, `androidApp` ne dépend que de `shell` | shell, androidApp, iosApp | `refactor: split shared into shell module and rewire iosApp` | ⬜ |
 | 5 | `core:model` et `core:common` (dispatchers, Result, extensions) | core:model, core:common | `feat: add core model and common modules` | ⬜ |
