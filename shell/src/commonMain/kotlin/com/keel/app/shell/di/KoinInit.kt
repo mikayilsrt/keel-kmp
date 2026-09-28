@@ -5,9 +5,13 @@ import com.keel.app.core.data.di.dataModule
 import com.keel.app.core.network.di.networkModule
 import com.keel.app.feature.home.impl.di.homeModule
 import com.keel.app.feature.profile.impl.di.profileModule
+import com.keel.app.feature.settings.impl.di.settingsModule
+import com.keel.app.shell.AppViewModel
 import org.koin.core.context.startKoin
 import org.koin.core.module.Module
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.KoinAppDeclaration
+import org.koin.dsl.module
 
 internal val coreModules: List<Module> = listOf(
     commonModule,
@@ -18,7 +22,12 @@ internal val coreModules: List<Module> = listOf(
 internal val featureModules: List<Module> = listOf(
     homeModule,
     profileModule,
+    settingsModule,
 )
+
+internal val shellModule: Module = module {
+    viewModelOf(::AppViewModel)
+}
 
 /**
  * Starts Koin with every core and feature module. Must be called exactly once per process:
@@ -27,6 +36,6 @@ internal val featureModules: List<Module> = listOf(
 fun initKoin(config: KoinAppDeclaration? = null) {
     startKoin {
         config?.invoke(this)
-        modules(coreModules + featureModules)
+        modules(coreModules + featureModules + shellModule)
     }
 }

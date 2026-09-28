@@ -22,11 +22,14 @@ kotlin {
             implementation(projects.feature.home.api)
             implementation(projects.feature.home.impl)
             implementation(projects.feature.profile.impl)
+            implementation(projects.feature.settings.api)
+            implementation(projects.feature.settings.impl)
             implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.androidx.lifecycle.runtime.compose)
         }
         androidMain.dependencies {
             api(libs.koin.android)
+            implementation(libs.androidx.core.ktx)
         }
     }
 }

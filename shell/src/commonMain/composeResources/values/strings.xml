@@ -1,0 +1,4 @@
+<resources>
+    <string name="destination_home">Home</string>
+    <string name="destination_settings">Settings</string>
+</resources>
