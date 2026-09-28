@@ -1,4 +1,5 @@
 import com.keel.app.buildlogic.configureKotlinMultiplatform
+import com.keel.app.buildlogic.forbidDependenciesOnFeatures
 import com.keel.app.buildlogic.libs
 import com.keel.app.buildlogic.pluginId
 import org.gradle.api.Plugin
@@ -10,5 +11,6 @@ class KmpLibraryConventionPlugin : Plugin<Project> {
         pluginManager.apply(libs.pluginId("kotlin-multiplatform"))
         pluginManager.apply(libs.pluginId("android-kotlin-multiplatform-library"))
         configureKotlinMultiplatform()
+        if (path.startsWith(":core:")) forbidDependenciesOnFeatures()
     }
 }

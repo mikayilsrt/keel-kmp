@@ -1,3 +1,4 @@
+import com.keel.app.buildlogic.forbidDependenciesOnOtherFeatureImpls
 import com.keel.app.buildlogic.libs
 import com.keel.app.buildlogic.library
 import com.keel.app.buildlogic.pluginId
@@ -9,12 +10,15 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 /**
  * Implementation of a feature (`:feature:x:impl`). Wires Compose, Koin, the core UI modules
  * and the feature's own api module. Everything in the module should be `internal` except its Koin module.
+ *
+ * Fails the build if the module depends on another `feature:*:impl` module.
  */
 class FeatureImplConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
         pluginManager.apply("keel.compose.multiplatform")
         pluginManager.apply("keel.koin")
         pluginManager.apply(libs.pluginId("kotlin-serialization"))
+        forbidDependenciesOnOtherFeatureImpls()
 
         extensions.configure<KotlinMultiplatformExtension> {
             explicitApi()
