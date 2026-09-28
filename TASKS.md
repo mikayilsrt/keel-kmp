@@ -30,7 +30,7 @@ Ajustements par rapport au découpage de base :
 | 4 | Renommage `shared` → `shell`, framework iOS produit par `shell`, phase Xcode rebranchée, `androidApp` ne dépend que de `shell` | shell, androidApp, iosApp | `refactor: split shared into shell module and rewire iosApp` | ✅ |
 | 5 | `core:model` et `core:common` (dispatchers, Result, extensions) | core:model, core:common | `feat: add core model and common modules` | ✅ |
 | 6 | `core:designsystem` : thème M3 clair/sombre, couleurs, typo, composants atomiques, Compose Resources | core:designsystem | `feat: add core designsystem with theme and compose resources` | ✅ |
-| 7 | `core:ui` : composants partagés, états Loading / Error | core:ui | `feat: add core ui module with loading and error states` | ⬜ |
+| 7 | `core:ui` : composants partagés, états Loading / Error | core:ui | `feat: add core ui module with loading and error states` | ✅ |
 | 8 | `core:navigation` : `FeatureEntry`, `Navigator` | core:navigation | `feat: add core navigation with FeatureEntry and Navigator` | ⬜ |
 | 9 | `core:network` : HttpClient Ktor, `networkModule`, engines OkHttp / Darwin | core:network | `feat: add core network module with ktor platform engines` | ⬜ |
 | 10 | `core:database` : Room KMP + BundledSQLiteDriver, builder par plateforme, plugin `keel.room` | core:database, build-logic | `feat: add core database module with room kmp` | ⬜ |
