@@ -46,6 +46,7 @@ Ajustements par rapport au découpage de base :
 | 20 | Test Koin `verify()` des modules en `androidHostTest` | shell | `test: verify koin module graph in android host tests` | ✅ |
 | 21 | Script `rename.sh` (testé sur copie temporaire) | racine | `chore: add rename.sh script to bootstrap new projects` | ✅ |
 | 22 | README : présentation, architecture, règles de dépendances, lancement Android / simulateur / iPhone, ajout de feature, rename.sh | README.md | `docs: write README for Keel architecture and usage` | ✅ |
+| 23 | Deployment target iOS 18.5 (aligné sur les binaires Compose, supprime le warning ld) | iosApp | `build: raise iOS deployment target to 18.5` | ✅ |
 
 ## Vérifications par tâche
 
