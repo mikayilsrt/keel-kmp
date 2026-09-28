@@ -1,19 +1,55 @@
+# OS / IDE
+.DS_Store
+.idea/
 *.iml
-.kotlin
-.gradle
+*.ipr
+*.iws
+.fleet/
+.vscode/
+
+# Gradle / Kotlin
+.gradle/
+.kotlin/
 **/build/
-xcuserdata
 !src/**/build/
 local.properties
-.idea
-.DS_Store
-captures
-.externalNativeBuild
-.cxx
+captures/
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+google-services.json
+
+# Kotlin/Native
+*.klib
+.konan/
+
+# Xcode
+xcuserdata/
+DerivedData/
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcodeproj/project.xcworkspace/
+*.xcodeproj/project.xcworkspace/*
+!*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+Pods/
+.build/
+iosApp/Shared.framework
+
+# Misc
 node_modules/
