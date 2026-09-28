@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Keel</string>
+    <string name="action_back">Back</string>
+    <string name="action_retry">Retry</string>
+</resources>

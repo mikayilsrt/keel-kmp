@@ -11,6 +11,7 @@ kotlin {
         }
     }
     sourceSets.commonMain.dependencies {
+        implementation(projects.core.designsystem)
         implementation(libs.androidx.lifecycle.viewmodel.compose)
         implementation(libs.androidx.lifecycle.runtime.compose)
     }
