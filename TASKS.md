@@ -33,7 +33,7 @@ Ajustements par rapport au découpage de base :
 | 7 | `core:ui` : composants partagés, états Loading / Error | core:ui | `feat: add core ui module with loading and error states` | ✅ |
 | 8 | `core:navigation` : `FeatureEntry`, `Navigator` | core:navigation | `feat: add core navigation with FeatureEntry and Navigator` | ✅ |
 | 9 | `core:network` : HttpClient Ktor, `networkModule`, engines OkHttp / Darwin | core:network | `feat: add core network module with ktor platform engines` | ✅ |
-| 10 | `core:database` : Room KMP + BundledSQLiteDriver, builder par plateforme, plugin `keel.room` | core:database, build-logic | `feat: add core database module with room kmp` | ⬜ |
+| 10 | `core:database` : Room KMP + BundledSQLiteDriver, builder par plateforme, plugin `keel.room` | core:database, build-logic | `feat: add core database module with room kmp` | ✅ |
 | 11 | `core:datastore` : DataStore Preferences, chemin fourni par plateforme | core:datastore | `feat: add core datastore module with platform file paths` | ⬜ |
 | 12 | `core:data` : repositories partagés (utilisateurs fake, préférences) | core:data | `feat: add core data module with shared repositories` | ⬜ |
 | 13 | `core:testing` : fakes, `MainDispatcherRule` équivalent KMP, helpers coroutines | core:testing | `test: add core testing module with fakes and coroutine helpers` | ⬜ |

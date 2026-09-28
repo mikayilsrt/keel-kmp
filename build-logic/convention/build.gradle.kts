@@ -22,6 +22,8 @@ dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.compose.gradlePlugin)
     compileOnly(libs.composeCompiler.gradlePlugin)
+    compileOnly(libs.ksp.gradlePlugin)
+    compileOnly(libs.room.gradlePlugin)
 }
 
 gradlePlugin {
@@ -45,6 +47,10 @@ gradlePlugin {
         register("featureImpl") {
             id = "keel.feature.impl"
             implementationClass = "FeatureImplConventionPlugin"
+        }
+        register("room") {
+            id = "keel.room"
+            implementationClass = "RoomConventionPlugin"
         }
         register("androidApplication") {
             id = "keel.android.application"
