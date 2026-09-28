@@ -21,6 +21,7 @@ kotlin {
             implementation(projects.core.network)
             implementation(projects.feature.home.api)
             implementation(projects.feature.home.impl)
+            implementation(projects.feature.profile.impl)
             implementation(libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.androidx.lifecycle.runtime.compose)
         }

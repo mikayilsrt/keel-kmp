@@ -1,0 +1,5 @@
+<resources>
+    <string name="profile_title">Profile</string>
+    <string name="profile_user_id">User id: %1$s</string>
+    <string name="profile_not_found">This user does not exist</string>
+</resources>
