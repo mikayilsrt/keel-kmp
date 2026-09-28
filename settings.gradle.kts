@@ -33,3 +33,5 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":androidApp")
 include(":shell")
+include(":core:common")
+include(":core:model")
