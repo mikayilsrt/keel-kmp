@@ -35,7 +35,7 @@ Ajustements par rapport au découpage de base :
 | 9 | `core:network` : HttpClient Ktor, `networkModule`, engines OkHttp / Darwin | core:network | `feat: add core network module with ktor platform engines` | ✅ |
 | 10 | `core:database` : Room KMP + BundledSQLiteDriver, builder par plateforme, plugin `keel.room` | core:database, build-logic | `feat: add core database module with room kmp` | ✅ |
 | 11 | `core:datastore` : DataStore Preferences, chemin fourni par plateforme | core:datastore | `feat: add core datastore module with platform file paths` | ✅ |
-| 12 | `core:data` : repositories partagés (utilisateurs fake, préférences) | core:data | `feat: add core data module with shared repositories` | ⬜ |
+| 12 | `core:data` : repositories partagés (utilisateurs fake, préférences) | core:data | `feat: add core data module with shared repositories` | ✅ |
 | 13 | `core:testing` : fakes, `MainDispatcherRule` équivalent KMP, helpers coroutines | core:testing | `test: add core testing module with fakes and coroutine helpers` | ⬜ |
 | 14 | `feature:home` api + impl : liste depuis `core:data`, clic → `ProfileRoute(userId)` | feature:home:api, feature:home:impl | `feat: add home feature api and impl modules` | ⬜ |
 | 15 | Shell : `initKoin()`, `App()`, `NavHost` alimenté par `FeatureEntry`, `NavControllerNavigator`, safe areas, init Koin iOS/Android | shell, androidApp, iosApp | `feat: wire shell with koin, navhost and safe area handling` | ⬜ |
