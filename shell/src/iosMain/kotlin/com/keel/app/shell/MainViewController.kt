@@ -1,4 +1,4 @@
-package com.keel.app
+package com.keel.app.shell
 
 import androidx.compose.ui.window.ComposeUIViewController
 
